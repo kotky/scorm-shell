@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no" ?>
+<!--
+Single SCO with advanced runtime calls. SCORM 2004 3rd Edition.
+
+Provided by Rustici Software - http://www.scorm.com
+
+This example demonstrates the use of more advanced runtime calls in a multi-page SCO. It
+includes a demonstration of reporting interactions (question results), progress
+towards specific learning objective and overall progress towards completion. 
+It also demonstrates using the manifest to specify a passing score rather than 
+hard coding the passing score within the content.
+-->
+
+<manifest identifier="mckinsey.academy" version="1"
+          xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+          xmlns:adlseq="http://www.adlnet.org/xsd/adlseq_v1p3"
+          xmlns:adlnav="http://www.adlnet.org/xsd/adlnav_v1p3"
+          xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
+          xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 imscp_v1p1.xsd
+                              http://www.adlnet.org/xsd/adlcp_v1p3 adlcp_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlseq_v1p3 adlseq_v1p3.xsd
+                              http://www.adlnet.org/xsd/adlnav_v1p3 adlnav_v1p3.xsd
+                              http://www.imsglobal.org/xsd/imsss imsss_v1p0.xsd">
+  
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>2004 3rd Edition</schemaversion>
+  </metadata>
+  <organizations default="mckinsey_academy_organization">
+    <organization identifier="mckinsey_academy_organization" adlseq:objectivesGlobalToSystem="false">
+      <title>Mckinsey Academy</title>
+      <item identifier="i1" identifierref="r1" isvisible="true">
+        <title>Mckinsey Academy</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="r1" type="webcontent" adlcp:scormType="sco" href="scormdriver/indexAPI.html">
+      <file href="scormdriver/SCORM_2004_APIWrapper.js" />
+      <file href="config/config.js"/>
+    </resource>
+  </resources>
+</manifest>
