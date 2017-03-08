@@ -30,9 +30,9 @@ hard coding the passing score within the content.
   </metadata>
   <organizations default="mckinsey_academy_organization">
     <organization identifier="mckinsey_academy_organization" adlseq:objectivesGlobalToSystem="false">
-      <title>{{TITLE_PLACEHOLDER}}</title>
+      <title></title>
       <item identifier="i1" identifierref="r1" isvisible="true">
-        <title>{{TITLE_PLACEHOLDER}}</title>
+        <title></title>
       </item>
     </organization>
   </organizations>
